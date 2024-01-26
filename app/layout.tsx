@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { cookies } from 'next/headers'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Header } from './ui/header'
@@ -18,11 +17,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const cookieStore = cookies()
-  const theme = cookieStore.get('theme')
-
   return (
-    <html lang="en" data-theme={theme?.value}>
+    <html lang="en">
       <body className={inter.className}>
         <Header />
         <main>{children}</main>
