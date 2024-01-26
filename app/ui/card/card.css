@@ -1,0 +1,9 @@
+.card {
+  background: var(--colors-surface-secondary);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.card-title {
+  padding: var(--space-6);
+}

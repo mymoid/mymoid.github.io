@@ -1,0 +1,71 @@
+.bg-lights {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  filter: blur(400px);
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: -100;
+}
+
+.bg-lights-left,
+.bg-lights-after {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-lights-left:before,
+.bg-lights-left:after,
+.bg-lights-right:before,
+.bg-lights-right:after {
+  content: '';
+  position: absolute;
+  border-radius: 100%;
+}
+
+.bg-lights-left:before,
+.bg-lights-left:after {
+  left: 0;
+}
+
+.bg-lights-right:before,
+.bg-lights-right:after {
+  right: 0;
+}
+
+.bg-lights-left:before {
+  left: 5vw;
+  top: 10vh;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(200deg, #04a645 36.98%, #a4d810 87.78%);
+}
+
+.bg-lights-left:after {
+  left: 5vw;
+  bottom: -12vh;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(31deg, #543aef 21.26%, #d218f0 81.76%);
+}
+
+.bg-lights-right:before {
+  right: -2vw;
+  top: 4vh;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(150deg, #aa17ef 48.66%, #d20072 73.99%);
+}
+
+.bg-lights-right:after {
+  right: -10vw;
+  bottom: -20vh;
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(174deg, #d7019b 30.55%, #ff8d24 96.24%);
+  opacity: 0.8;
+}
