@@ -6,7 +6,12 @@ const libraries = [
     key: '1',
     name: 'PHP library',
     image: '/PHP-logo.svg',
-    disabled: true
+    link: 'https://github.com/mymoid/mymoid-php',
+    badge: (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img alt="composer version" src="http://poser.pugx.org/mymoid/api/v" />
+    ),
+    disabled: false
   },
   {
     key: '2',
